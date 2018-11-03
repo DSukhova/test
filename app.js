@@ -10,7 +10,7 @@ let anzahlbewertungen =0;
 let aktuellebew =0;
 let bewName = [];
 let anz = [anzahlbewertungen];
-let letztebew = [bewertung];
+//let letztebew = [bewertung];
 let letzteErgebnis = 0;
 
 const readline = require('readline'); // => Readline-Modul aktivieren
@@ -53,8 +53,8 @@ const bw = (min,max,bewertung,aktuellebew) => {
         console.log("Aktuelle Bewertung ist: " +aktuellebew);
 
     }
-}
-
+};
+console.log(bw());
 
 // 22.10.2018 Weiterfuernde Aufgaben zu JS
 
@@ -62,6 +62,7 @@ const bw = (min,max,bewertung,aktuellebew) => {
 
 let bewName = [];
 let anz = [anzahlbewertungen];
+let letzebew;
 let letztebew = [bewertung];
 
 console.log("Anzahl der abgegebenen Bewertungen: " +anz.length);
@@ -115,7 +116,7 @@ function umgekehrt () {
     // console.log(concat);
 }
 
-const hello = 'hello';
+//const hello = 'hello';
 
 
 c1 = (p) => {
@@ -128,7 +129,7 @@ console.log(c2(c1()));
 
 //Variante 2
 
-const hello = 'hello'; // globale Konstante deklarieren
+//const hello = 'hello'; // globale Konstante deklarieren
 function myFirstFunc ()
 {
     const world = 'world'; // lokale Konstante deklarieren
@@ -145,6 +146,8 @@ myFirstFunc (); // ruft die erste Funktion auf
 
 console.log (mySecondFunc ()); //  ruft das Ergebnis der zweiten Funktion auf
 
+
+    //3.11.2018
 
 
 rl.close();
